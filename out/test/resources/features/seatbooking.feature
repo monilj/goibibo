@@ -1,4 +1,3 @@
-@seatbooking
 Feature:
   As a user
   I want to be able to book a seat in a bus for given date

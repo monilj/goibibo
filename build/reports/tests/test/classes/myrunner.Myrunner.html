@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class myrunner.Myrunner</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class myrunner.Myrunner</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/myrunner.html">myrunner</a> &gt; Myrunner</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">0</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">-</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">-</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>@seatbooking
+Feature: 
+  As a user
+  I want to be able to book a seat in a bus for given date
+
+  Scenario Outline: Book a seat in bus                                               ?[90m# seatbooking.feature:6?[0m
+    //Given user sends mobile no 9876545678
+    //And click on continue
+
+    ?[36mGiven ?[0m?[36muser on home screen taps skip?[0m
+    ?[36mAnd ?[0m?[36muser on home screen taps on bus?[0m
+    ?[36mAnd ?[0m?[36muser on tripDetail page taps on From?[0m
+    ?[36mAnd ?[0m?[36muser on tripDetail page types on enterdeptartureCityName value &quot;&lt;dept_city&gt;&quot;?[0m
+    ?[36mAnd ?[0m?[36muser on tripDetail page select first option from city?[0m
+    ?[36mAnd ?[0m?[36muser on tripDetail page taps on To?[0m
+    ?[36mAnd ?[0m?[36muser on tripDetail page types on enterarrivalCityName value &quot;&lt;arr_city&gt;&quot;?[0m
+    ?[36mAnd ?[0m?[36muser on tripDetail page select first option from city?[0m
+    ?[36mAnd ?[0m?[36muser on tripDetail page taps on Departure date?[0m
+    ?[36mAnd ?[0m?[36muser on tripDetail page select date 29 &quot;October&quot; from calender?[0m
+    ?[36mAnd ?[0m?[36muser on tripDetail page taps on SearchButton?[0m
+    ?[36mAnd ?[0m?[36muser on busSearch page select first bus?[0m
+    ?[36mAnd ?[0m?[36muser on seatSelectionpage selected seat number 9 and 10?[0m
+    ?[36mAnd ?[0m?[36muser on seatSelectionpage taps on continue?[0m
+    ?[36mAnd ?[0m?[36muser on seatSelectionpage select pick up point as &quot;Majestic&quot;?[0m
+
+    Examples: 
+[HTTP] --&gt; POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/element {&quot;using&quot;:&quot;id&quot;,&quot;value&quot;:&quot;bus_icon&quot;}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: [&quot;id&quot;,&quot;bus_icon&quot;,&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;bus_icon&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;bus_icon&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'bus_icon' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.goibibo:id/bus_icon]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:{&quot;ELEMENT&quot;:&quot;3&quot;}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {&quot;ELEMENT&quot;:&quot;3&quot;}
+[HTTP] &lt;-- POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/element 200 724 ms - 87 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 4 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/element/3/click {&quot;id&quot;:&quot;3&quot;}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: [&quot;3&quot;,&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;element:click&quot;,&quot;params&quot;:{&quot;elementId&quot;:&quot;3&quot;}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;element:click&quot;,&quot;params&quot;:{&quot;elementId&quot;:&quot;3&quot;}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[HTTP] &lt;-- POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/element/3/click 200 630 ms - 76 
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:true}
+[HTTP] --&gt; POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/element {&quot;using&quot;:&quot;id&quot;,&quot;value&quot;:&quot;got_it&quot;}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: [&quot;id&quot;,&quot;got_it&quot;,&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;got_it&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;got_it&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'got_it' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.goibibo:id/got_it]
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:{&quot;ELEMENT&quot;:&quot;4&quot;}}
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {&quot;ELEMENT&quot;:&quot;4&quot;}
+[HTTP] &lt;-- POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/element 200 1302 ms - 87 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 1 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/element/4/click {&quot;id&quot;:&quot;4&quot;}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: [&quot;4&quot;,&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;element:click&quot;,&quot;params&quot;:{&quot;elementId&quot;:&quot;4&quot;}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;element:click&quot;,&quot;params&quot;:{&quot;elementId&quot;:&quot;4&quot;}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:true}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[HTTP] &lt;-- POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/element/4/click 200 3126 ms - 76 
+[HTTP] --&gt; POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/element {&quot;using&quot;:&quot;id&quot;,&quot;value&quot;:&quot;bus_origin&quot;}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: [&quot;id&quot;,&quot;bus_origin&quot;,&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;bus_origin&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;bus_origin&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'bus_origin' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.goibibo:id/bus_origin]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:{&quot;ELEMENT&quot;:&quot;5&quot;}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {&quot;ELEMENT&quot;:&quot;5&quot;}
+[HTTP] &lt;-- POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/element 200 28 ms - 87 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 4 ms - 967 
+[HTTP] --&gt; POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/element/5/click {&quot;id&quot;:&quot;5&quot;}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: [&quot;5&quot;,&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;element:click&quot;,&quot;params&quot;:{&quot;elementId&quot;:&quot;5&quot;}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;element:click&quot;,&quot;params&quot;:{&quot;elementId&quot;:&quot;5&quot;}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:true}
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[HTTP] &lt;-- POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/element/5/click 200 872 ms - 76 
+[HTTP] --&gt; POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/element {&quot;using&quot;:&quot;id&quot;,&quot;value&quot;:&quot;search_edit&quot;}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: [&quot;id&quot;,&quot;search_edit&quot;,&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;search_edit&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;search_edit&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'search_edit' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.goibibo:id/search_edit]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:{&quot;ELEMENT&quot;:&quot;6&quot;}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {&quot;ELEMENT&quot;:&quot;6&quot;}
+[HTTP] &lt;-- POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/element 200 468 ms - 87 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 1 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/element/6/value {&quot;id&quot;:&quot;6&quot;,&quot;value&quot;:[&quot;Bangalore&quot;]}
+[debug] [MJSONWP] Calling AppiumDriver.setValue() with args: [[&quot;Bangalore&quot;],&quot;6&quot;,&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;element:setText&quot;,&quot;params&quot;:{&quot;elementId&quot;:&quot;6&quot;,&quot;text&quot;:&quot;Bangalore&quot;,&quot;replace&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;element:setText&quot;,&quot;params&quot;:{&quot;elementId&quot;:&quot;6&quot;,&quot;text&quot;:&quot;Bangalore&quot;,&quot;replace&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: setText
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using element passed in: 6
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Attempting to clear using UiObject.clearText().
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Text remains after clearing, but it appears to be hint text.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Text not cleared. Assuming remainder is hint text.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Sending plain text to element: Bangalore
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.setValue() result: true
+[HTTP] &lt;-- POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/element/6/value 200 4665 ms - 76 
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:true}
+[HTTP] --&gt; POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/elements {&quot;using&quot;:&quot;id&quot;,&quot;value&quot;:&quot;suggested_place&quot;}
+[debug] [MJSONWP] Calling AppiumDriver.findElements() with args: [&quot;id&quot;,&quot;suggested_place&quot;,&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;suggested_place&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;suggested_place&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'suggested_place' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.goibibo:id/suggested_place]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.goibibo:id/suggested_place]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.goibibo:id/suggested_place]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (1)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.goibibo:id/suggested_place]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (2)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=2, RESOURCE_ID=com.goibibo:id/suggested_place]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (3)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=3, RESOURCE_ID=com.goibibo:id/suggested_place]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=android:id/suggested_place]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=android:id/suggested_place]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=android:id/suggested_place]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=suggested_place]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=suggested_place]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=suggested_place]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=suggested_place]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[DESCRIPTION=suggested_place]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[DESCRIPTION=suggested_place, INSTANCE=0]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:[{&quot;ELEMENT&quot;:&quot;7&quot;},{&quot;ELEMENT&quot;:&quot;8&quot;},{&quot;ELEMENT&quot;:&quot;9&quot;}]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElements() result: [{&quot;ELEMENT&quot;:&quot;7&quot;},{&quot;ELEMENT&quot;:&quot;8&quot;},{&quot;ELEMENT&quot;:&quot;9&quot;}]
+[HTTP] &lt;-- POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/elements 200 1354 ms - 121 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 4 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 3 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 4 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 3 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 4 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/element/7/click {&quot;id&quot;:&quot;7&quot;}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: [&quot;7&quot;,&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;element:click&quot;,&quot;params&quot;:{&quot;elementId&quot;:&quot;7&quot;}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;element:click&quot;,&quot;params&quot;:{&quot;elementId&quot;:&quot;7&quot;}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:true}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[HTTP] &lt;-- POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/element/7/click 200 3161 ms - 76 
+[HTTP] --&gt; POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/element {&quot;using&quot;:&quot;id&quot;,&quot;value&quot;:&quot;bus_dest&quot;}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: [&quot;id&quot;,&quot;bus_dest&quot;,&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;bus_dest&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;bus_dest&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'bus_dest' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.goibibo:id/bus_dest]
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:{&quot;ELEMENT&quot;:&quot;10&quot;}}
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {&quot;ELEMENT&quot;:&quot;10&quot;}
+[HTTP] &lt;-- POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/element 200 22 ms - 88 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 1 ms - 967 
+[HTTP] --&gt; POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/element/10/click {&quot;id&quot;:&quot;10&quot;}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: [&quot;10&quot;,&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;element:click&quot;,&quot;params&quot;:{&quot;elementId&quot;:&quot;10&quot;}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;element:click&quot;,&quot;params&quot;:{&quot;elementId&quot;:&quot;10&quot;}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:true}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[HTTP] &lt;-- POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/element/10/click 200 585 ms - 76 
+[HTTP] --&gt; POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/element {&quot;using&quot;:&quot;id&quot;,&quot;value&quot;:&quot;search_edit&quot;}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: [&quot;id&quot;,&quot;search_edit&quot;,&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;search_edit&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;search_edit&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'search_edit' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.goibibo:id/search_edit]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:{&quot;ELEMENT&quot;:&quot;11&quot;}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {&quot;ELEMENT&quot;:&quot;11&quot;}
+[HTTP] &lt;-- POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/element 200 642 ms - 88 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 3 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/element/11/value {&quot;id&quot;:&quot;11&quot;,&quot;value&quot;:[&quot;Pune&quot;]}
+[debug] [MJSONWP] Calling AppiumDriver.setValue() with args: [[&quot;Pune&quot;],&quot;11&quot;,&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;element:setText&quot;,&quot;params&quot;:{&quot;elementId&quot;:&quot;11&quot;,&quot;text&quot;:&quot;Pune&quot;,&quot;replace&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;element:setText&quot;,&quot;params&quot;:{&quot;elementId&quot;:&quot;11&quot;,&quot;text&quot;:&quot;Pune&quot;,&quot;replace&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: setText
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using element passed in: 11
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Attempting to clear using UiObject.clearText().
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Text remains after clearing, but it appears to be hint text.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Text not cleared. Assuming remainder is hint text.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Sending plain text to element: Pune
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:true}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.setValue() result: true
+[HTTP] &lt;-- POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/element/11/value 200 4785 ms - 76 
+[HTTP] --&gt; POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/elements {&quot;using&quot;:&quot;id&quot;,&quot;value&quot;:&quot;suggested_place&quot;}
+[debug] [MJSONWP] Calling AppiumDriver.findElements() with args: [&quot;id&quot;,&quot;suggested_place&quot;,&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;suggested_place&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;suggested_place&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'suggested_place' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.goibibo:id/suggested_place]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.goibibo:id/suggested_place]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.goibibo:id/suggested_place]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (1)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.goibibo:id/suggested_place]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (2)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=2, RESOURCE_ID=com.goibibo:id/suggested_place]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (3)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=3, RESOURCE_ID=com.goibibo:id/suggested_place]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=android:id/suggested_place]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=android:id/suggested_place]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=android:id/suggested_place]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=suggested_place]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=suggested_place]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=suggested_place]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=suggested_place]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[DESCRIPTION=suggested_place]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[DESCRIPTION=suggested_place, INSTANCE=0]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:[{&quot;ELEMENT&quot;:&quot;12&quot;},{&quot;ELEMENT&quot;:&quot;13&quot;},{&quot;ELEMENT&quot;:&quot;14&quot;}]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElements() result: [{&quot;ELEMENT&quot;:&quot;12&quot;},{&quot;ELEMENT&quot;:&quot;13&quot;},{&quot;ELEMENT&quot;:&quot;14&quot;}]
+[HTTP] &lt;-- POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/elements 200 1146 ms - 124 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 3 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 4 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 3 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 3 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 3 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.getSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [MJSONWP] Responding to client with driver.getSession() result: {&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;Android Device&quot;,&quot;autoAcceptAlerts&quot;:true},&quot;app&quot;:&quot;/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk&quot;,&quot;appPackage&quot;:&quot;com.goibibo&quot;,&quot;appActivity&quot;:&quot;com.goibibo.common.HomeActivity&quot;,&quot;newCommandTimeout&quot;:30,&quot;platformVersion&quot;:&quot;5.1&quot;,&quot;platformName&quot;:&quot;Android&quot;,&quot;deviceName&quot;:&quot;192.168.56.101:5555&quot;,&quot;autoAcceptAlerts&quot;:true,&quot;deviceUDID&quot;:&quot;192.168.56.101:5555&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceModel&quot;:&quot;Google Nexus 6 - 5.1.0 - API 22 - 1440x2560&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;}
+[HTTP] &lt;-- GET /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 2 ms - 967 
+[HTTP] --&gt; POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/element/12/click {&quot;id&quot;:&quot;12&quot;}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: [&quot;12&quot;,&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;element:click&quot;,&quot;params&quot;:{&quot;elementId&quot;:&quot;12&quot;}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;element:click&quot;,&quot;params&quot;:{&quot;elementId&quot;:&quot;12&quot;}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[HTTP] &lt;-- POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/element/12/click 200 3210 ms - 76 
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:0,&quot;value&quot;:true}
+[HTTP] --&gt; POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/element {&quot;using&quot;:&quot;id&quot;,&quot;value&quot;:&quot;textBusOnwDay_cur&quot;}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: [&quot;id&quot;,&quot;textBusOnwDay_cur&quot;,&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;textBusOnwDay_cur&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;textBusOnwDay_cur&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'textBusOnwDay_cur' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.goibibo:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=textBusOnwDay_cur, INSTANCE=0]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'textBusOnwDay_cur' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.goibibo:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=textBusOnwDay_cur, INSTANCE=0]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 5384 ms so far
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;textBusOnwDay_cur&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;textBusOnwDay_cur&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'textBusOnwDay_cur' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.goibibo:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=textBusOnwDay_cur, INSTANCE=0]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'textBusOnwDay_cur' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.goibibo:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=textBusOnwDay_cur, INSTANCE=0]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 6024 ms so far
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;textBusOnwDay_cur&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;textBusOnwDay_cur&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'textBusOnwDay_cur' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.goibibo:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=textBusOnwDay_cur, INSTANCE=0]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'textBusOnwDay_cur' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.goibibo:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=textBusOnwDay_cur, INSTANCE=0]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 6947 ms so far
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;textBusOnwDay_cur&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;textBusOnwDay_cur&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'textBusOnwDay_cur' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.goibibo:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=textBusOnwDay_cur, INSTANCE=0]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'textBusOnwDay_cur' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.goibibo:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=textBusOnwDay_cur, INSTANCE=0]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 7540 ms so far
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;textBusOnwDay_cur&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;textBusOnwDay_cur&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'textBusOnwDay_cur' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.goibibo:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=textBusOnwDay_cur, INSTANCE=0]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'textBusOnwDay_cur' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.goibibo:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=textBusOnwDay_cur, INSTANCE=0]
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 8201 ms so far
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;textBusOnwDay_cur&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;textBusOnwDay_cur&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'textBusOnwDay_cur' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.goibibo:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=textBusOnwDay_cur, INSTANCE=0]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'textBusOnwDay_cur' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.goibibo:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=textBusOnwDay_cur, INSTANCE=0]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 8827 ms so far
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;textBusOnwDay_cur&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;textBusOnwDay_cur&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'textBusOnwDay_cur' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.goibibo:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=textBusOnwDay_cur, INSTANCE=0]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'textBusOnwDay_cur' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.goibibo:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=textBusOnwDay_cur, INSTANCE=0]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 9424 ms so far
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;textBusOnwDay_cur&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;action&quot;,&quot;action&quot;:&quot;find&quot;,&quot;params&quot;:{&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;textBusOnwDay_cur&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'textBusOnwDay_cur' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.goibibo:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=textBusOnwDay_cur, INSTANCE=0]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'textBusOnwDay_cur' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.goibibo:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=textBusOnwDay_cur]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=textBusOnwDay_cur, INSTANCE=0]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {&quot;status&quot;:7,&quot;value&quot;:&quot;No element found&quot;}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[HTTP] &lt;-- POST /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7/element 500 10160 ms - 164 
+[HTTP] --&gt; DELETE /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 {}
+[debug] [MJSONWP] Calling AppiumDriver.deleteSession() with args: [&quot;e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7&quot;]
+[debug] [BaseDriver] Event 'quitSessionRequested' logged at 1509366845528 (18:04:05 GMT+0530 (IST))
+[Appium] Removing session e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 from our master session list
+[debug] [AndroidDriver] Shutting down Android driver
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/moniljoshi/Library/Android/sdk/platform-tools/adb' with args: [&quot;-P&quot;,5037,&quot;-s&quot;,&quot;192.168.56.101:5555&quot;,&quot;shell&quot;,&quot;am&quot;,&quot;force-stop&quot;,&quot;com.goibibo&quot;]
+[debug] [ADB] Pressing the HOME button
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/moniljoshi/Library/Android/sdk/platform-tools/adb' with args: [&quot;-P&quot;,5037,&quot;-s&quot;,&quot;192.168.56.101:5555&quot;,&quot;shell&quot;,&quot;input&quot;,&quot;keyevent&quot;,3]
+[debug] [AndroidBootstrap] Sending command to android: {&quot;cmd&quot;:&quot;shutdown&quot;}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {&quot;cmd&quot;:&quot;shutdown&quot;}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [UiAutomator] Shutting down UiAutomator
+[debug] [UiAutomator] Moving to state 'stopping'
+[debug] [UiAutomator] UiAutomator shut down normally
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/moniljoshi/Library/Android/sdk/platform-tools/adb' with args: [&quot;-P&quot;,5037,&quot;-s&quot;,&quot;192.168.56.101:5555&quot;,&quot;shell&quot;,&quot;ps&quot;]
+[ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [Logcat] Stopping logcat capture
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/moniljoshi/Library/Android/sdk/platform-tools/adb' with args: [&quot;-P&quot;,5037,&quot;-s&quot;,&quot;192.168.56.101:5555&quot;,&quot;shell&quot;,&quot;am&quot;,&quot;force-stop&quot;,&quot;io.appium.unlock&quot;]
+[debug] [AndroidDriver] Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
+[debug] [BaseDriver] Event 'quitSessionFinished' logged at 1509366846788 (18:04:06 GMT+0530 (IST))
+[debug] [MJSONWP] Received response: null
+[debug] [MJSONWP] But deleting session, so not returning
+[debug] [MJSONWP] Responding to client with driver.deleteSession() result: null
+[HTTP] &lt;-- DELETE /wd/hub/session/e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7 200 1263 ms - 76 
+
+  @seatbooking
+  Scenario Outline: Book a seat in bus                                             ?[90m# seatbooking.feature:27?[0m
+    //Given user sends mobile no 9876545678
+    //And click on continue
+
+    ?[32mGiven ?[0m?[32muser on home screen taps skip?[0m                                            ?[90m# HomePageStep.user_on_home_screen_taps_skip()?[0m
+    ?[32mAnd ?[0m?[32muser on home screen taps on bus?[0m                                            ?[90m# HomePageStep.user_on_home_screen_taps_on_bus()?[0m
+    ?[32mAnd ?[0m?[32muser on tripDetail page taps on From?[0m                                       ?[90m# TripDetailPageStep.user_on_tripDetail_page_taps_on_From()?[0m
+    ?[32mAnd ?[0m?[32muser on tripDetail page types on enterdeptartureCityName value &quot;?[0m?[32m?[1mBangalore?[0m?[32m&quot;?[0m ?[90m# TripDetailPageStep.user_on_tripDetail_page_types_on_enterdeptartureCityName_value(String)?[0m
+    ?[32mAnd ?[0m?[32muser on tripDetail page select first option from city?[0m                      ?[90m# TripDetailPageStep.user_on_tripDetail_page_select_first_option_from_city()?[0m
+    ?[32mAnd ?[0m?[32muser on tripDetail page taps on To?[0m                                         ?[90m# TripDetailPageStep.user_on_tripDetail_page_taps_on_To()?[0m
+    ?[32mAnd ?[0m?[32muser on tripDetail page types on enterarrivalCityName value &quot;?[0m?[32m?[1mPune?[0m?[32m&quot;?[0m         ?[90m# TripDetailPageStep.user_on_tripDetail_page_types_on_enterarrivalCityName_value(String)?[0m
+    ?[32mAnd ?[0m?[32muser on tripDetail page select first option from city?[0m                      ?[90m# TripDetailPageStep.user_on_tripDetail_page_select_first_option_from_city()?[0m
+    ?[31mAnd ?[0m?[31muser on tripDetail page taps on Departure date?[0m                             ?[90m# TripDetailPageStep.user_on_tripDetail_page_taps_on_Departure_date()?[0m
+      ?[31morg.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+      Command duration or timeout: 0 milliseconds
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+      System info: host: 'Monils-MacBook-Pro.local', ip: 'fe80:0:0:0:1cbf:1c1b:817f:2eff%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.5', java.version: '1.8.0_144'
+      Driver info: io.appium.java_client.android.AndroidDriver
+      Capabilities [{app=/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk, appPackage=com.goibibo, deviceScreenSize=1440x2560, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.56.101:5555, platform=LINUX, deviceUDID=192.168.56.101:5555, appActivity=com.goibibo.common.HomeActivity, desired={app=/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk, appPackage=com.goibibo, appActivity=com.goibibo.common.HomeActivity, newCommandTimeout=30, platformVersion=5.1, platformName=Android, deviceName=Android Device, autoAcceptAlerts=true}, newCommandTimeout=30, platformVersion=5.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Google Nexus 6 - 5.1.0 - API 22 - 1440x2560, deviceManufacturer=unknown, platformName=LINUX, autoAcceptAlerts=true}]
+      Session ID: e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7
+      *** Element info: {Using=id, value=textBusOnwDay_cur}
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+      	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+      	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+      	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+      	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+      	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+      	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+      	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+      	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+      	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:402)
+      	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+      	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+      	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+      	at org.openqa.selenium.By$ById.findElement(By.java:218)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+      	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+      	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+      	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+      	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+      	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+      	at com.sun.proxy.$Proxy19.click(Unknown Source)
+      	at pages.TripDetailPage.user_on_tripDetail_page_taps_on_Departure_date(TripDetailPage.java:69)
+      	at steps.TripDetailPageStep.user_on_tripDetail_page_taps_on_Departure_date(TripDetailPageStep.java:34)
+      	at ?.And user on tripDetail page taps on Departure date(seatbooking.feature:17)
+      ?[0m
+    ?[36mAnd ?[0m?[36muser on tripDetail page select date ?[0m?[36m?[1m29?[0m?[36m &quot;?[0m?[36m?[1mOctober?[0m?[36m&quot; from calender?[0m             ?[90m# TripDetailPageStep.user_on_tripDetail_page_select_from_calender(int,String)?[0m
+    ?[36mAnd ?[0m?[36muser on tripDetail page taps on SearchButton?[0m                               ?[90m# TripDetailPageStep.user_on_tripDetail_page_taps_on_SearchButton()?[0m
+    ?[36mAnd ?[0m?[36muser on busSearch page select first bus?[0m                                    ?[90m# BusSearchPageStep.user_on_busSearch_page_select_first_bus()?[0m
+    ?[36mAnd ?[0m?[36muser on seatSelectionpage selected seat number ?[0m?[36m?[1m9?[0m?[36m and ?[0m?[36m?[1m10?[0m                    ?[90m# SeatSelectionPageStep.user_on_seatSelectionpage_selected_seat_number(int,int)?[0m
+    ?[36mAnd ?[0m?[36muser on seatSelectionpage taps on continue?[0m                                 ?[90m# SeatSelectionPageStep.use_on_seatSelectionpage_taps_on_continue()?[0m
+    ?[36mAnd ?[0m?[36muser on seatSelectionpage select pick up point as &quot;?[0m?[36m?[1mMajestic?[0m?[36m&quot;?[0m               ?[90m# SeatSelectionPageStep.user_on_seatselectionpage_select_pick_up_pointAs(String)?[0m
+
+?[31mFailed scenarios:?[0m
+?[31mseatbooking.feature:27 ?[0m# Scenario Outline: Book a seat in bus
+
+1 Scenarios (?[31m1 failed?[0m)
+15 Steps (?[31m1 failed?[0m, ?[36m6 skipped?[0m, ?[32m8 passed?[0m)
+1m3.481s
+
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'Monils-MacBook-Pro.local', ip: 'fe80:0:0:0:1cbf:1c1b:817f:2eff%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.5', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk, appPackage=com.goibibo, deviceScreenSize=1440x2560, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.56.101:5555, platform=LINUX, deviceUDID=192.168.56.101:5555, appActivity=com.goibibo.common.HomeActivity, desired={app=/Users/moniljoshi/Development/Goibibo/app/Goibibo.apk, appPackage=com.goibibo, appActivity=com.goibibo.common.HomeActivity, newCommandTimeout=30, platformVersion=5.1, platformName=Android, deviceName=Android Device, autoAcceptAlerts=true}, newCommandTimeout=30, platformVersion=5.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Google Nexus 6 - 5.1.0 - API 22 - 1440x2560, deviceManufacturer=unknown, platformName=LINUX, autoAcceptAlerts=true}]
+Session ID: e4fd87ed-2d93-4f2b-a67d-e15e2bd4e4e7
+*** Element info: {Using=id, value=textBusOnwDay_cur}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:402)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.click(Unknown Source)
+	at pages.TripDetailPage.user_on_tripDetail_page_taps_on_Departure_date(TripDetailPage.java:69)
+	at steps.TripDetailPageStep.user_on_tripDetail_page_taps_on_Departure_date(TripDetailPageStep.java:34)
+	at ?.And user on tripDetail page taps on Departure date(seatbooking.feature:17)
+
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.1</a> at Oct 30, 2017 6:04:06 PM</p>
+</div>
+</div>
+</body>
+</html>

@@ -20,3 +20,12 @@ dependencies {
     compile group: 'info.cukes', name: 'cucumber-jvm', version: '1.2.5'
 
 }
+// TO run with testNG make a testNG suit under resources  and run following code
+/*test {
+    useTestNG {
+        suites 'src/main/resources/testng.xml'
+    }
+}*/
+test{
+    systemProperty "cucumber.options",System.properties.getProperty("cucumber.options")
+}
